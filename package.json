@@ -1,12 +1,14 @@
 {
-  "name": "i18n",
+  "name": "@devrael/i18n",
   "version": "1.0.0",
   "description": "Simple and lightweight message localisation",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "test": "ava",
+    "build": "tsc",
+    "build-test": "npm run build && npm run test",
+    "watch:test": "ava --watch"
   },
   "keywords": [
     "i18n",
@@ -19,5 +21,9 @@
   "dependencies": {
     "@types/node": "^18.6.3",
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "ava": "^4.3.1",
+    "lodash.isequal": "^4.5.0"
   }
 }

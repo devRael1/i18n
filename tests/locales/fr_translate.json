@@ -1,0 +1,22 @@
+{
+  "simple": "C'est aussi simple que possible",
+  "positional_placeholders": {
+    "1": "Ceci est un %s qui utilise des espaces réservés de position",
+    "2": "Ceci est un %s utilisant %d espaces réservés de position"
+  },
+  "named_placeholders": {
+    "example": "Ceci est un {word} utilisant des espaces réservés \\{named\\}",
+    "hello": "Bonjour, {name}!"
+  },
+  "plural": {
+    "age": [
+      "Tu es né récemment",
+      "Tu es né il y a un an",
+      "Vous êtes né il y a %d ans"
+    ],
+    "vehicles": [
+      "Vous possédez un seul {vehicles.type}",
+      "Vous possédez {vehicles.count} {vehicles.type}s"
+    ]
+  }
+}
