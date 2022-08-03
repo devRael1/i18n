@@ -57,7 +57,7 @@ const i18n = new I18n('english', {
 const french_i18n = i18n.getLocale('french'); // get locale
 console.log(french_i18n('welcome')); // -> 'Bonjour tout le monde'
 
-// this code does exactly the same
+/** This code does exactly the same */
 console.log(i18n.getMessage('french', 'welcome'));
 ```
 
