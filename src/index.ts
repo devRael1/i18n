@@ -125,7 +125,7 @@ class I18n {
                 return value === undefined ? $ : value;
             });
         } else {
-            const regex = /(?<!\\)%(d|s)/gi;
+            const regex = /(?<!\\)%([ds])/gi;
             let i = 0;
             return text
                 .replace(regex, () => <string>args[i++]);
@@ -142,10 +142,9 @@ class I18n {
         obj: Messages | MessageArgs | NamedArgs,
         key: string
     ): string | string[] | undefined {
-        const item: string | string[] | undefined = key
+        return key
             .split(/\./g)
             .reduce((acc, part) => acc && acc[part], obj);
-        return item;
     }
 
 }
