@@ -1,5 +1,5 @@
 {
-  "name": "@devrael/i18n",
+  "name": "@devraelfreeze/i18n",
   "version": "1.0.0",
   "description": "Simple and lightweight message localisation",
   "main": "dist/index.js",

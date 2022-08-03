@@ -1,5 +1,5 @@
 /**
- * @module @devrael/i18n
+ * @module @devraelfreeze/i18n
  * @author devRael <devrael1@protonmail.com>
  * @copyright 2022 devRael1
  * @license MIT
